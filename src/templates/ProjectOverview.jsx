@@ -31,8 +31,10 @@ const columnCount = Math.min(detailEntries.length, 3);
       </div> */}
       <ProjectHeader
       title={data?.title}
-      icon={data?.icon ?? <VscGithubProject className="w-8 h-8" />
-}
+      icon={data?.icon ?? <VscGithubProject className="w-8 h-8"
+         /> 
+      } 
+      link={data?.link}
       tech={data?.techStack}  
       description={data?.summary}
       />

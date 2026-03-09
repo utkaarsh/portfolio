@@ -66,7 +66,7 @@ export const projects = [
     id: "2",
     icon: <ImageIconComponent src={devbumbleIcon}/>,
     title: "Dev Bumble",
-    link: "https://github.com",
+    link: "https://github.com/utkaarsh/devBumble-backend",
     summary:
       "A developer social connection platform enabling users to discover, connect and chat in real-time with other developers.",
 
@@ -107,7 +107,7 @@ export const projects = [
     id: "3",
     icon: <ImageIconComponent src={cinemaGptIcon}/>,
     title: "Cinema GPT",
-    link: "https://github.com",
+    link: "https://github.com/utkaarsh/cinema-gpt",
     summary:
       "A movie recommendation web app powered by Gemini AI that provides intelligent movie suggestions and search.",
 

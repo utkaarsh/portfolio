@@ -3,7 +3,7 @@ import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { RxGithubLogo } from "react-icons/rx";
 
-const ProjectHeader = ({ icon, title, description, tech = [] }) => {
+const ProjectHeader = ({ icon, title, description,link, tech = [] }) => {
   return (
     <div className="flex flex-col gap-4">
       {/* Title Row */}
@@ -25,13 +25,15 @@ const ProjectHeader = ({ icon, title, description, tech = [] }) => {
         <div className="flex items-center gap-3 ">
          {/* <RxGithubLogo /> */}
 
-          <h2 className="text-xl font-semibold text-white">
+          {link && (
+            <a href={link} className="text-xl font-semibold text-white">
             <GoArrowUpRight
               size={20}
               className="text-[#FFC107]  transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
             />
 
-          </h2>
+          </a>
+          )}
         </div>
       </div>
 
