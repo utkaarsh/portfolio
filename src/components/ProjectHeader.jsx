@@ -26,7 +26,7 @@ const ProjectHeader = ({ icon, title, description,link, tech = [] }) => {
          {/* <RxGithubLogo /> */}
 
           {link && (
-            <a href={link} className="text-xl font-semibold text-white">
+            <a href={link}  className="text-xl font-semibold text-white" target="_blank">
             <GoArrowUpRight
               size={20}
               className="text-[#FFC107]  transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
