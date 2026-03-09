@@ -15,26 +15,28 @@ const App = () => {
     <div className="flex flex-col space-y-4 items-center p-2 bg-black text-white w-full h-full min-h-screen">
       <div className="flex justify-center w-full mb-10 mt-8  font-semibold text-xl top-0 sticky bg-black z-30 py-5">
         <div className="flex justify-around items-center gap-3 w-11/12 md:w-4/12">
-          <a href="#home">
-            <AiOutlineHome />
+          <a href="#home" className="flex flex-col items-center" >
+            <AiOutlineHome /> <p className="pt-2 text-xs">Home</p>
           </a>
-          <a href="#projects">
+          <a href="#projects" className="flex flex-col items-center">
             <FaRegFolder />
+            <p className="pt-2 text-xs">Projects</p>
           </a>
-          <a href="#experience">
+          <a href="#experience" className="flex flex-col items-center">
             <FiBriefcase />
+            <p className="pt-2 text-xs">Experience</p>
           </a>
-          <a href="#skills">
+          <a href="#skills" className="flex flex-col items-center">
             <MdOutlineSettings />
+            <p className="pt-2 text-xs">Skills</p>
           </a>
-          <BsFillPersonFill />
         </div>
       </div>
 
       {/* GRID BOX  */}
       <div
         id="home"
-        className="grid w-full grid-cols-1 justify-center gap-10 xl:gap-2 xl:grid-cols-7 p-3  relative"
+        className="scroll-mt-24 grid w-full grid-cols-1 justify-center gap-10 xl:gap-2 xl:grid-cols-7 p-3  relative"
       >
         {/* BOX 1 */}
         <div className="box1 min-w-[23rem] w-full xl:h-[40rem] flex justify-center xl:justify-end xl:col-span-2  xl:sticky top-12 ">
@@ -117,16 +119,16 @@ const App = () => {
               </h2>
             </div>
           </div>
-          <div id="projects">
+          <div id="projects" className="scroll-mt-24">
             <Projects title="Recent Projects" data={projects} />
           </div>
           {/* <div id="projects">
             <PresentationList title="Recent Projects" data={projectData} />
           </div> */}
-          <div id="experience">
+          <div id="experience" className="scroll-mt-24">
             <PresentationList title="Work Experience" data={experienceData} />
           </div>
-          <div id="skills">
+          <div id="skills" className="scroll-mt-24">
             <SkillComponent title="Languages and Frameworks" skills={skills} />
             <SkillComponent
               title="Tools and Technologies"

@@ -151,9 +151,21 @@ export const experienceData = [
     startDate: "July 2025",
     endDate: "Present",
     designation: "Software Developer",
-    description: ` Created a robust Image Annotation App (Digital Proofing System) in React and Laravel that generated a new income stream and help boost company margins by 50%. Developed a inhouse inventory management system according to company’s requirement that helped company be less dependent on out-sourcing third-party tools .
-Migrated Blade templates from Bootstrap to Tailwind CSS for modern UI consistency.
-Connected Blade templates with backend APIs and databases to display dynamic content efficiently.
+    description: `Architected a collaborative proofing and annotation platform using React,
+designing modular, reusable, and scalable frontend components integrated
+with REST APIs.
+Led development of a deep-zoom image annotation interface using
+OpenSeadragon and Annotorious, implementing synchronized compare
+views and responsive UI patterns for complex user interactions.
+Implemented workflow-driven permission guards and full annotation
+lifecycle management (create/update/delete) with UI-to-server
+reconciliation, ensuring reliable multi-user collaboration and data
+consistency.
+Delivered a high-impact product enhancement that improved collaboration
+efficiency and accelerated client approval cycles, contributing to a 30%
+increase in company revenue.
+Improved application performance by optimizing React rendering with
+memoization, efficient state updates, and lazy loading..
 
 `,
     link: "https://www.binated.com",
@@ -251,6 +263,18 @@ export const skills = [
     skillIcon:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtGg2RJvvrzmUi4BXEWzpEwLc2XkJndppcgQ&s",
   },
+  {
+    title: "Typescript",
+    subtitle: "A subset of Javascript",
+    skillIcon:
+      "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
+  },
+  {
+    title: "Laravel",
+    subtitle: "A PHP Framework",
+    skillIcon:
+      "https://cdn.flyonui.com/fy-assets/icons/laravel-icon.png",
+  },
 ];
 
 export const skillTools = [
@@ -322,7 +346,7 @@ export const skillTools = [
   {
     title: "Webhooks",
     subtitle: "Event-driven backend integrations",
-    skillIcon: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
+    skillIcon: "https://files.cdn.prismic.io/files/f4b68c81-d6f9-4f2b-855e-aac0c168eff2_webhooks-logo-png-transparent.svg?fit=max&w=3840",
   },
   {
     title: "NPM",

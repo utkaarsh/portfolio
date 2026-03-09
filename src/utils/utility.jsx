@@ -15,7 +15,7 @@ export const socials = [
   {
     name: "Github",
     icon: <FaGithub color={color} />,
-    link: "https://www.linkedin.com/in/utkarsh-ranpise/",
+    link: "https://github.com/utkaarsh",
   },
   {
     name: "Gmail",

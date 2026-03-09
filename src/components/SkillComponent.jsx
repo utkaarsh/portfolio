@@ -24,7 +24,7 @@ const SkillComponent = ({
             <div key={index} className="flex items-start gap-4 group">
               <div className="flex-shrink-0 w-12 h-12 bg-neutral-900 rounded-lg overflow-hidden p-2">
                 <img
-                  className="h-full w-full object-contain grayscale group-hover:grayscale-0 transition-all"
+                  className="h-full w-full object-contain  transition-all"
                   src={item.skillIcon ?? "https://via.placeholder.com/50"}
                   alt={item.title}
                 />
