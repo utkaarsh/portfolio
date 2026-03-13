@@ -56,7 +56,7 @@ export const projects = [
     id: "2",
     icon: <ImageIconComponent src={devbumbleIcon} />,
     title: "Dev Bumble",
-    link: "https://github.com/utkaarsh/devBumble-backend",
+    link: "https://web-dev-bumble.vercel.app",
     summary:
       "A full-stack developer social connection platform enabling users to discover, connect, and chat in real-time with other developers — built with a swipe-based feed, rich profiles, and live messaging.",
 
