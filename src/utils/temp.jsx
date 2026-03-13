@@ -7,16 +7,14 @@ import cyberiumIcon from "../../src/assets/cyberiums_logo.jpg";
 import binatedIcon from "../../src/assets/binated.png";
 import { ImageIconComponent } from "./helper";
 
-
-
 export const projects = [
   {
     id: "1",
-    icon: <ImageIconComponent src={feedantsIcon}/>,
+    icon: <ImageIconComponent src={feedantsIcon} />,
     title: "Feedants",
     link: "https://feedants.com",
     summary:
-      "A skill-oriented competition and social media platform where users participate in contests, submit entries, and get judged by experts.",
+      "A full-stack skill-oriented competition platform where users participate in contests, submit performance entries, get evaluated by expert judges, and compete for top rankings — built across web, mobile, and backend.",
 
     techStack: [
       "React",
@@ -26,61 +24,65 @@ export const projects = [
       "MongoDB",
       "Tailwind CSS",
       "JWT",
-      "FFmpeg"
+      "FFmpeg",
+    ],
+
+    details: {
+      backend: {
+        github: "https://github.com",
+        points: [
+          "Architected a modular REST API system handling event lifecycle — from listings and submissions to judge reviews and automated result declarations",
+          "Built scalable backend services using Node.js and Express with MongoDB for flexible, document-based data modeling",
+          "Integrated FFmpeg for server-side video processing, enabling compressed and optimized media submissions at scale",
+          "Implemented JWT authentication with role-based access control across performer, judge, and admin roles",
+          "Engineered real-time dashboard analytics for live competition tracking and performance insights",
+        ],
+      },
+
+      mobile: {
+        github: "https://github.com",
+        points: [
+          "Developed a dedicated judge panel mobile application using React Native, optimized for smooth submission reviews and structured scoring workflows",
+          "Ensured consistent, responsive UI/UX across both Android and iOS platforms",
+          "Integrated RESTful APIs via Axios with secure JWT-based authentication and seamless data flow",
+          "Optimized rendering performance for media-heavy submission feeds, reducing load friction for judges",
+        ],
+      },
+    },
+  },
+
+  ,
+  {
+    id: "2",
+    icon: <ImageIconComponent src={devbumbleIcon} />,
+    title: "Dev Bumble",
+    link: "https://github.com/utkaarsh/devBumble-backend",
+    summary:
+      "A full-stack developer social connection platform enabling users to discover, connect, and chat in real-time with other developers — built with a swipe-based feed, rich profiles, and live messaging.",
+
+    techStack: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "WebSockets",
+      "Socket.io",
+      "Tailwind CSS",
+      "AWS EC2",
+      "JWT",
     ],
 
     details: {
       frontend: {
         github: "https://github.com",
         points: [
-          "Implemented reusable component libraries using Tailwind CSS with Hooks and Context API for consistent UI",
-          "Built responsive and cross-browser compatible UI across devices",
-          "Developed the competition dashboard with React.js for event and submission management",
-          "Integrated RESTful APIs with Axios enabling secure JWT based authentication and data flow"
-        ]
+          "Built a dynamic home feed page with swipe-style like/dislike match interactions, delivering a smooth and intuitive developer discovery experience",
+          "Developed a profile section allowing users to view and edit their developer profile with real-time form validation and clean UX",
+          "Implemented a real-time chat interface for matched developers using WebSockets and Socket.io with dynamic room management",
+          "Architected reusable React components across feed, profile, and chat modules following clean code principles and consistent design patterns",
+        ],
       },
 
-      backend: {
-        github: "https://github.com",
-        points: [
-          "Designed modular API architecture for event listings, submissions, judge reviews and result declarations",
-          "Built scalable backend services using Node.js and Express",
-          "Implemented JWT authentication and secure role-based access control",
-          "Handled real-time dashboard updates and analytics processing"
-        ]
-      },
-
-      mobile: {
-        github: "https://github.com",
-        points: [
-          "Developed judge panel mobile application using React Native",
-          "Optimized mobile performance for submission reviews and scoring",
-          "Implemented secure authentication and seamless API integrations",
-          "Ensured consistent UI/UX across Android and iOS platforms"
-        ]
-      }
-    }
-  },
-
-  {
-    id: "2",
-    icon: <ImageIconComponent src={devbumbleIcon}/>,
-    title: "Dev Bumble",
-    link: "https://github.com/utkaarsh/devBumble-backend",
-    summary:
-      "A developer social connection platform enabling users to discover, connect and chat in real-time with other developers.",
-
-    techStack: [
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "WebSockets",
-      "Socket.io",
-      "AWS EC2",
-      "JWT"
-    ],
-
-    details: {
       backend: {
         github: "https://github.com",
         points: [
@@ -88,8 +90,8 @@ export const projects = [
           "Designed RESTful APIs and routing system with scalable service architecture",
           "Implemented secure authentication using JWT and password encryption",
           "Built a real-time chat system using WebSockets and Socket.io with dynamic room management",
-          "Optimized feed performance using pagination and MongoDB compound indexes"
-        ]
+          "Optimized feed performance using pagination and MongoDB compound indexes",
+        ],
       },
 
       devops: {
@@ -97,15 +99,16 @@ export const projects = [
         points: [
           "Deployed production environment using AWS EC2",
           "Configured custom domain and SSL certificates",
-          "Managed scalable infrastructure and API availability"
-        ]
-      }
-    }
+          "Managed scalable infrastructure and API availability",
+        ],
+      },
+    },
   },
 
+  ,
   {
     id: "3",
-    icon: <ImageIconComponent src={cinemaGptIcon}/>,
+    icon: <ImageIconComponent src={cinemaGptIcon} />,
     title: "Cinema GPT",
     link: "https://github.com/utkaarsh/cinema-gpt",
     summary:
@@ -117,7 +120,7 @@ export const projects = [
       "Firebase",
       "Gemini API",
       "Formik",
-      "Tailwind CSS"
+      "Tailwind CSS",
     ],
 
     details: {
@@ -128,8 +131,8 @@ export const projects = [
           "Used Redux Toolkit for efficient state management and predictable data flow",
           "Integrated Gemini AI API to power GPT based movie search and recommendations",
           "Implemented form validation and UI state management using Formik",
-          "Designed responsive UI components optimized for mobile and desktop"
-        ]
+          "Designed responsive UI components optimized for mobile and desktop",
+        ],
       },
 
       backend: {
@@ -137,11 +140,11 @@ export const projects = [
         points: [
           "Integrated Firebase authentication for signup, login and logout flows",
           "Connected Gemini developer API to process user movie queries",
-          "Managed secure API communication between frontend and AI services"
-        ]
-      }
-    }
-  }
+          "Managed secure API communication between frontend and AI services",
+        ],
+      },
+    },
+  },
 ];
 
 export const experienceData = [
@@ -149,21 +152,11 @@ export const experienceData = [
     title: "Binated",
     location: "Pune",
     startDate: "July 2025",
-    endDate: "Present",
+    endDate: "Mar 2026",
     designation: "Software Developer",
-    description: `Architected a collaborative proofing and annotation platform using React,
-designing modular, reusable, and scalable frontend components integrated
-with REST APIs.
-Led development of a deep-zoom image annotation interface using
-OpenSeadragon and Annotorious, implementing synchronized compare
-views and responsive UI patterns for complex user interactions.
-Implemented workflow-driven permission guards and full annotation
-lifecycle management (create/update/delete) with UI-to-server
-reconciliation, ensuring reliable multi-user collaboration and data
-consistency.
-Delivered a high-impact product enhancement that improved collaboration
-efficiency and accelerated client approval cycles, contributing to a 30%
-increase in company revenue.
+    description: `Owned end-to-end development of a deep-zoom image annotation platform using OpenSeadragon and Annotorious, enabling high-resolution asset review with synchronized compare views and performance-optimized rendering, contributing to a 30% revenue increase.
+Engineered a full-cycle recruitment management system, building multi-step application forms with strict data validation using Formik and Yup, and architecting reusable form components that significantly reduced technical debt and improved overall project structure.
+Developed an applicant tracking dashboard with real-time analytics across candidate pipeline stages (Invited, Waiting, Hold, Selected), implementing advanced filtering by date range, status, and search to streamline recruiter workflows.
 Improved application performance by optimizing React rendering with
 memoization, efficient state updates, and lazy loading..
 
@@ -177,20 +170,26 @@ memoization, efficient state updates, and lazy loading..
     startDate: "Mar 2024",
     endDate: "Mar 2025",
     designation: "Software Development Engineer",
-    description: ` Led front-end architecture in React Js, implementing reusable components, reducing tech debt, and enhancing UX consistency.
-Developed and maintained scalable RESTful APIs in Node JS, enabling seamless integration between front-end and backend  services, and supporting features like dynamic filtering, authentication, and analytics.
-Enhanced mobile application and backend functionalities using React Native and Node Js, driving app downloads from 500 to over 10K.Optimized database queries and implemented pagination to reduce API response times by 25%.Conducted thorough code reviews to ensure adherence to high-quality coding standards.
+    description: ` Led a team of two junior developers in architecting and delivering an end-to-end online dance competition platform, defining the component conventions and custom reusable hooks for REST API integration to ensure consistency and reduce onboarding friction.
+Contributed to the development of a React Native mobile application, implementing code splitting and lazy loading to optimize bundle size and enhance user experience, helping scale downloads from 500 to 10,000+ users.
+Architected a judging evaluation system with a structured scoring UI, integrating custom algorithms for result computation and a job scheduler for automated winner declaration and real-time push notifications to top 3 performers.
+Implemented secure authentication and role-based access control using JWT, protecting API endpoints and enforcing permission-based workflows across performer, judge, and admin roles.
 `,
     link: "https://www.linkedin.com/company/blaccsckull-platform-private-limited/about/",
     icon: feedantsIcon,
   },
   {
-    title: "Cyberium",
+    title: "Mantrna (formerly Cyberium)",
     location: "Pune",
     startDate: "Sept 2022",
     endDate: "Apr 2023",
     designation: "Web Developer",
-    description: `Partnered with designers and architects to shape front-end component APIs and responsive layouts, creating modular  React libraries that delivered secure, reusable, and scalable UI patterns.Built and optimized frontend integrations with RESTful APIs, enabling dynamic data flows and improving application security and accessibility.Drove Agile sprints by delivering features on schedule, improving team velocity and overall productivity by 40%
+    description: `Participated in Agile/Scrum ceremonies including sprint planning and code reviews, maintaining task visibility on Jira.
+Translated Figma designs into pixel-perfect React components using Tailwind CSS, ensuring design fidelity and responsive layouts across multiple production projects.
+Built a blog feed UI with reusable post card, image gallery, and comment section components in React and TypeScript, following component-driven architecture patterns.
+Developed an admin analytics dashboard integrating Recharts and D3 for data visualizations including graphs and charts, contributing to data-driven decision making for internal stakeholders.
+
+
 `,
     link: "https://www.linkedin.com/company/cyberiums/",
     icon: cyberiumIcon,
@@ -266,14 +265,12 @@ export const skills = [
   {
     title: "Typescript",
     subtitle: "A subset of Javascript",
-    skillIcon:
-      "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
+    skillIcon: "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
   },
   {
     title: "Laravel",
     subtitle: "A PHP Framework",
-    skillIcon:
-      "https://cdn.flyonui.com/fy-assets/icons/laravel-icon.png",
+    skillIcon: "https://cdn.flyonui.com/fy-assets/icons/laravel-icon.png",
   },
 ];
 
@@ -282,6 +279,11 @@ export const skillTools = [
     title: "Redux",
     subtitle: "State management for complex React apps",
     skillIcon: "https://cdn.worldvectorlogo.com/logos/redux.svg",
+  },
+  {
+    title: "React Query",
+    subtitle: "Data fetching and caching for React",
+    skillIcon: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
   },
   {
     title: "Context API",
@@ -346,7 +348,8 @@ export const skillTools = [
   {
     title: "Webhooks",
     subtitle: "Event-driven backend integrations",
-    skillIcon: "https://files.cdn.prismic.io/files/f4b68c81-d6f9-4f2b-855e-aac0c168eff2_webhooks-logo-png-transparent.svg?fit=max&w=3840",
+    skillIcon:
+      "https://files.cdn.prismic.io/files/f4b68c81-d6f9-4f2b-855e-aac0c168eff2_webhooks-logo-png-transparent.svg?fit=max&w=3840",
   },
   {
     title: "NPM",
