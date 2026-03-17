@@ -14,13 +14,17 @@ export const renderBullets = (bullets = []) => {
       <div className="w-3">
         <MdFiberManualRecord size={10} className="mt-2 text-white/60" />
       </div>
-      <span className="text-sm">{sentence}.</span>
+      <span className="text-base">{sentence}.</span>
     </li>
   ));
 };
 
-export const ImageIconComponent=({src})=>{
-  return(
-      <img src={src} alt="image-icon" className="w-full object-contain h-28 rounded-lg overflow-hidden  p-2" />
-  )
-}
+export const ImageIconComponent = ({ src }) => {
+  return (
+    <img
+      src={src}
+      alt="image-icon"
+      className="w-full object-contain h-28 rounded-lg overflow-hidden  p-2"
+    />
+  );
+};

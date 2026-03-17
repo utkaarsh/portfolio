@@ -1,15 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { getBullets, renderBullets } from "../utils/helper";
 import { GoArrowUpRight } from "react-icons/go";
 
-const PresentationList = ({
-  title = "Title for Projects",
-  data = [],
-}) => {
+const PresentationList = ({ title = "Title for Projects", data = [] }) => {
   const words = title.split(" ");
   const firstLine = words[0];
   const secondLine = words.slice(1).join(" ");
-  const [expandedIndex, setExpandedIndex] = useState(null);
 
   return (
     <div className="w-full md:w-11/12 min-h-72 rounded-2xl space-y-6 p-2 md:p-5">
@@ -32,14 +28,15 @@ const PresentationList = ({
       <div className="space-y-5">
         {data &&
           data.map((item, index) => {
+            const bullets = getBullets(item.description ?? "");
+
             return (
-              /* FIX: Changed grid-cols-5 to grid-cols-1 on mobile.
-                 This ensures the image and text stack vertically until the screen is wide enough.
-              */
-              <div key={index} className="grid grid-cols-1 md:grid-cols-5 gap-4 hover:bg-[#262626] p-4 rounded-2xl transition-colors">
-                
-                {/* Image Container */}
-                <div className="md:col-span-1 h-32 md:h-28 overflow-hidden w-full flex  items-center">
+              <div
+                key={index}
+                className="grid grid-cols-1 md:grid-cols-5 gap-4 hover:bg-[#262626] p-4 rounded-2xl transition-colors"
+              >
+                {/* Image */}
+                <div className="md:col-span-1 h-32 md:h-28 overflow-hidden w-full flex items-center">
                   <img
                     className="w-full max-w-[120px] md:max-w-full object-contain h-28 rounded-lg bg-neutral-900 p-3"
                     src={item.icon ?? "https://via.placeholder.com/150"}
@@ -47,7 +44,7 @@ const PresentationList = ({
                   />
                 </div>
 
-                {/* Content Container */}
+                {/* Content */}
                 <div className="md:col-span-4 w-full space-y-3 px-0 md:px-3 pb-5 pt-2">
                   <a
                     href={item.link ?? "#"}
@@ -63,7 +60,7 @@ const PresentationList = ({
                         {item.designation ?? ""}
                       </h3>
                     </div>
-                    
+
                     <div className="flex flex-row sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto">
                       <GoArrowUpRight
                         size={20}
@@ -76,28 +73,11 @@ const PresentationList = ({
                     </div>
                   </a>
 
+                  {/* Full bullets always visible */}
                   <div className="text-white/70 text-sm">
-                    {(() => {
-                      const bullets = getBullets(item.description ?? "");
-                      const isExpanded = expandedIndex === index;
-                      const visibleBullets = isExpanded ? bullets : bullets.slice(0, 2);
-
-                      return (
-                        <>
-                          <ul className="space-y-1 list-disc pl-4">
-                            {renderBullets(visibleBullets)}
-                          </ul>
-                          {bullets.length > 2 && (
-                            <button
-                              onClick={() => setExpandedIndex(isExpanded ? null : index)}
-                              className="mt-2 text-white underline underline-offset-2 hover:text-yellow-400 transition-colors"
-                            >
-                              {isExpanded ? "Read less" : "Read more"}
-                            </button>
-                          )}
-                        </>
-                      );
-                    })()}
+                    <ul className="space-y-1 list-disc pl-4">
+                      {renderBullets(bullets)}
+                    </ul>
                   </div>
                 </div>
               </div>
