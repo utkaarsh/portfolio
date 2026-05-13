@@ -73,13 +73,25 @@ export const projects = [
     ],
 
     details: {
-      frontend: {
+      // frontend: {
+      //   github: "https://github.com",
+      //   points: [
+      //     "Built a dynamic home feed page with swipe-style like/dislike match interactions, delivering a smooth and intuitive developer discovery experience",
+      //     "Developed a profile section allowing users to view and edit their developer profile with real-time form validation and clean UX",
+      //     "Implemented a real-time chat interface for matched developers using WebSockets and Socket.io with dynamic room management",
+      //     "Architected reusable React components across feed, profile, and chat modules following clean code principles and consistent design patterns",
+      //   ],
+      // },
+      mobile: {
         github: "https://github.com",
         points: [
-          "Built a dynamic home feed page with swipe-style like/dislike match interactions, delivering a smooth and intuitive developer discovery experience",
-          "Developed a profile section allowing users to view and edit their developer profile with real-time form validation and clean UX",
-          "Implemented a real-time chat interface for matched developers using WebSockets and Socket.io with dynamic room management",
-          "Architected reusable React components across feed, profile, and chat modules following clean code principles and consistent design patterns",
+          "Built DevBumble, a cross-platform developer networking app using React Native and Expo",
+          "Implemented authentication, profile discovery, swipe-based matching, and user interaction flows",
+          "Integrated REST APIs using Axios with JWT authentication, interceptors, and secure storage via Expo SecureStore",
+          "Managed server state with TanStack React Query including pagination, caching, and infinite scrolling",
+          "Developed mobile-first UX features such as debounced search, pull-to-refresh, and smooth swipe gestures using Animated and PanResponder",
+          "Utilized Expo Location API to handle permissions, fetch user coordinates, and enable location-based discovery",
+          "Designed reusable and responsive UI components optimized for performance across devices",
         ],
       },
 
@@ -193,6 +205,22 @@ Developed an admin analytics dashboard integrating Recharts and D3 for data visu
 `,
     link: "https://www.linkedin.com/company/cyberiums/",
     icon: cyberiumIcon,
+  },
+  {
+    title: "Smart Genesis",
+    location: "Pune",
+    startDate: "Feb 2022",
+    endDate: "Aug 2022",
+    designation: "Junior Software Developer",
+    description: `Contributed to the frontend development of SinghCoin, a Web3 social media platform, using React and Redux, implementing routing, route protection, and scalable global state management.
+
+Built core UI features including an NFT marketplace, NFT cards, social feed, and blog system with engagement functionalities such as likes, comments, shares, and reactions.
+
+Translated Figma designs into responsive, pixel-perfect React components, ensuring consistent UI/UX across different screen sizes and devices.
+
+Developed and integrated RESTful APIs using Node.js and Express for blog interactions, feed filtering, and paginated data handling.`,
+    link: "",
+    icon: "https://smartgenesis.io/images/smart-genesis-logo.png",
   },
 ];
 

@@ -32,7 +32,7 @@ const Homepage = () => {
 
         <div className="grid grid-cols-3  gap-4">
           <div className="space-y-4">
-            <h1 className="text-6xl font-extrabold">+2</h1>
+            <h1 className="text-6xl font-extrabold">3</h1>
             <h2 className="text-base xl:text-xl text-[#998F8F]">
               Years of Experience
             </h2>
