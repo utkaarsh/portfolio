@@ -11,14 +11,15 @@ const Navbar = () => {
         <a href="#home" className="flex flex-col items-center">
           <AiOutlineHome /> <p className="pt-2 text-xs">Home</p>
         </a>
-        <a href="#projects" className="flex flex-col items-center">
-          <FaRegFolder />
-          <p className="pt-2 text-xs">Projects</p>
-        </a>
         <a href="#experience" className="flex flex-col items-center">
           <FiBriefcase />
           <p className="pt-2 text-xs">Experience</p>
         </a>
+        <a href="#projects" className="flex flex-col items-center">
+          <FaRegFolder />
+          <p className="pt-2 text-xs">Projects</p>
+        </a>
+
         <a href="#skills" className="flex flex-col items-center">
           <MdOutlineSettings />
           <p className="pt-2 text-xs">Skills</p>

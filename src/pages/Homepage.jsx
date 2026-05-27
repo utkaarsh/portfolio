@@ -26,8 +26,12 @@ const Homepage = () => {
           </h1>
         </div>
         <p className="text-xl max-w-2xl w-full text-[#998F8F] text-wrap break-word whitespace-normal">
-          Passionate about creating intuitive and engaging user experiences.
-          Specialize in transforming ideas into beautifully crafted products
+          I'm Utkarsh, a Full Stack Developer based in Pune with 3 years of
+          experience building web and mobile applications. I work across the
+          entire stack — React.js, React Native, and Node.js — and I care about
+          writing clean code that ships fast and scales well. I've helped
+          startups grow, led small teams, and built products that real people
+          use.
         </p>
 
         <div className="grid grid-cols-3  gap-4">
@@ -50,15 +54,16 @@ const Homepage = () => {
             </h2>
           </div>
         </div>
+        <div id="experience" className="scroll-mt-24">
+          <PresentationList title="Work Experience" data={experienceData} />
+        </div>
         <div id="projects" className="scroll-mt-24">
           <Projects title="Recent Projects" data={projects} />
         </div>
         {/* <div id="projects">
             <PresentationList title="Recent Projects" data={projectData} />
           </div> */}
-        <div id="experience" className="scroll-mt-24">
-          <PresentationList title="Work Experience" data={experienceData} />
-        </div>
+
         <div id="skills" className="scroll-mt-24">
           <SkillComponent title="Languages and Frameworks" skills={skills} />
           <SkillComponent title="Tools and Technologies" skills={skillTools} />
