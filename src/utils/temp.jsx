@@ -19,7 +19,7 @@ export const projects = [
     techStack: [
       "React",
       "React Native",
-      "Node.js",
+      "Node JS",
       "Express",
       "MongoDB",
       "Tailwind CSS",
@@ -32,7 +32,7 @@ export const projects = [
         github: "https://github.com",
         points: [
           "Architected a modular REST API system handling event lifecycle — from listings and submissions to judge reviews and automated result declarations",
-          "Built scalable backend services using Node.js and Express with MongoDB for flexible, document-based data modeling",
+          "Built scalable backend services using Node JS and Express with MongoDB for flexible, document-based data modeling",
           "Integrated FFmpeg for server-side video processing, enabling compressed and optimized media submissions at scale",
           "Implemented JWT authentication with role-based access control across performer, judge, and admin roles",
           "Engineered real-time dashboard analytics for live competition tracking and performance insights",
@@ -62,7 +62,7 @@ export const projects = [
 
     techStack: [
       "React",
-      "Node.js",
+      "Node JS",
       "Express",
       "MongoDB",
       "WebSockets",
@@ -98,7 +98,7 @@ export const projects = [
       backend: {
         github: "https://github.com",
         points: [
-          "Set up the backend architecture from scratch using Node.js, Express and MongoDB",
+          "Set up the backend architecture from scratch using Node JS, Express and MongoDB",
           "Designed RESTful APIs and routing system with scalable service architecture",
           "Implemented secure authentication using JWT and password encryption",
           "Built a real-time chat system using WebSockets and Socket.io with dynamic room management",
@@ -166,11 +166,9 @@ export const experienceData = [
     startDate: "July 2025",
     endDate: "Mar 2026",
     designation: "Software Developer",
-    description: `Owned end-to-end development of a deep-zoom image annotation platform using OpenSeadragon and Annotorious, enabling high-resolution asset review with synchronized compare views and performance-optimized rendering, contributing to a 30% revenue increase.
-Engineered a full-cycle recruitment management system, building multi-step application forms with strict data validation using Formik and Yup, and architecting reusable form components that significantly reduced technical debt and improved overall project structure.
-Developed an applicant tracking dashboard with real-time analytics across candidate pipeline stages (Invited, Waiting, Hold, Selected), implementing advanced filtering by date range, status, and search to streamline recruiter workflows.
-Improved application performance by optimizing React rendering with
-memoization, efficient state updates, and lazy loading..
+    description: `Built the Proofing System from scratch in React and Laravel — architecting a multi-proof annotation platform with side-by-side compare views, polygon/rect annotation tools, per-reviewer approval state tracking, and real-time UI updates without page reloads. This became Binated's hero product in the design-service and promotional industry, directly contributing to a 30% revenue increase and attracting major enterprise clients.
+Developed UI and designed custom components and hooks for Promolink NX a Laravel and React platform used by Binated to manage design-service operations, client portals, production workflows, HRMS tools, reports, invoices, and API integrations.
+Integrated OpenAI APIs and implemented webhook infrastructure for real-time order status notifications to client systems.
 
 `,
     link: "https://www.binated.com",
@@ -218,7 +216,7 @@ Built core UI features including an NFT marketplace, NFT cards, social feed, and
 
 Translated Figma designs into responsive, pixel-perfect React components, ensuring consistent UI/UX across different screen sizes and devices.
 
-Developed and integrated RESTful APIs using Node.js and Express for blog interactions, feed filtering, and paginated data handling.`,
+Developed and integrated RESTful APIs using Node JS and Express for blog interactions, feed filtering, and paginated data handling.`,
     link: "",
     icon: "https://smartgenesis.io/images/smart-genesis-logo.png",
   },
@@ -226,7 +224,7 @@ Developed and integrated RESTful APIs using Node.js and Express for blog interac
 
 export const skills = [
   {
-    title: "React.js",
+    title: "React JS",
     subtitle: "Frontend library for building UI",
     skillIcon: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
   },
@@ -236,13 +234,13 @@ export const skills = [
     skillIcon: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
   },
   {
-    title: "Node.js",
+    title: "Node JS",
     subtitle: "JavaScript runtime for backend services",
     skillIcon: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
   },
   {
-    title: "Express.js",
-    subtitle: "Minimal backend framework for Node.js",
+    title: "Express JS",
+    subtitle: "Minimal backend framework for Node JS",
     skillIcon:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-o387HjdP1tur_1CMjSACuTxAlWoXdvmJw&s",
   },

@@ -22,7 +22,7 @@ const Sidebar = () => {
           <p className="text-center text-[#6A6B6E] font-medium   text-base leading-relaxed max-w-sm">
             Full Stack Developer React.js · React Native · Node.js Pune, India
           </p>
-          <a href="/" download="Utkarsh_27may.pdf">
+          <a href="/" download="Utkarsh_1606.pdf">
             <button className="flex items-center mt-3 px-6 space-x-2 py-2 bg-[#F0F8FF] text-black rounded-lg font-semibold hover:bg-[#D6D6D6] transition-colors">
               <span>
                 <MdFileDownload />
@@ -36,6 +36,7 @@ const Sidebar = () => {
                 <a
                   title={item.link}
                   className={`border-2  overflow-hidden p-2 rounded-lg border-[#D6D6D6]`}
+                  target="_blank"
                   href={
                     item.type === "mail"
                       ? `mailto:${item.link}`

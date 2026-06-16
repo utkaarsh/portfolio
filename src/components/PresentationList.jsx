@@ -12,7 +12,7 @@ const PresentationList = ({
   const secondLine = words.slice(1).join(" ");
 
   return (
-    <div className="w-full md:w-11/12 min-h-72 rounded-2xl space-y-6 p-2 md:p-5">
+    <div className="w-full md:w-11/12 min-h-72 rounded-2xl space-y-6 p-2 md:p-1">
       {/* Title */}
       <div className="leading-none px-2">
         <div className="text-white text-3xl md:text-5xl font-semibold uppercase">
