@@ -15,7 +15,10 @@ import Footer from "../components/Footer";
 const Homepage = () => {
   return (
     <div className="bg-black text-white h-full min-h-screen ">
-      <div className=" grid xl:grid-cols-12 grid-cols-1 gap-4   w-full ">
+      <div
+        id="home"
+        className=" grid xl:grid-cols-12 grid-cols-1 gap-4   w-full "
+      >
         <Sidebar />
         <div />
         <div className="col-span-8 ">

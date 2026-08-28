@@ -98,7 +98,7 @@ export const projects = [
           "Managed server state with TanStack React Query including pagination, caching, and infinite scrolling",
           "Developed mobile-first UX features such as debounced search, pull-to-refresh, and smooth swipe gestures using Animated and PanResponder",
           "Utilized Expo Location API to handle permissions, fetch user coordinates, and enable location-based discovery",
-          "Designed reusable and responsive UI components optimized for performance across devices",
+          "Designed and integrated a real-time notification pipeline using FCM, Expo Notifications, Socket.IO, and Node.js, handling device registration, token persistence, push delivery, notification state, and real-time in-app updates.",
         ],
       },
 
