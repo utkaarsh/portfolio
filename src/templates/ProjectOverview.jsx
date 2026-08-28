@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectHeader from "../components/ProjectHeader";
 import { VscGithubProject } from "react-icons/vsc";
 import BulletPoints from "../components/BulletPoints";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import ImageSlider from "../components/ImageSlider";
 
 const ProjectOverview = ({ title = "Title for Projects", data }) => {
+  const [collapsed, setCollapsed] = useState(false);
   const words = title.split(" ");
   const firstLine = words[0];
   const secondLine = words.slice(1).join(" ");
   const detailEntries = Object.entries(data?.details || {});
   const columnCount = Math.min(detailEntries.length, 3);
+  const DownArrow = <IoIosArrowDown size={25} />;
+  const UpArrow = <IoIosArrowUp size={25} />;
 
-  console.log("Data :: ", data);
+  const handleExpand = () => {
+    setCollapsed(!collapsed);
+  };
 
   return (
-    <div className="w-full  min-h-72  rounded-2xl space-y-6 xl:p-5 ">
+    <div className="w-full  min-h-72  rounded-2xl space-y-6 xl:p-5 border border-[#353334]">
       {/* Title  */}
       {/* <div className="leading-none">
         <div className="text-white text-5xl font-semibold uppercase">
@@ -37,15 +44,37 @@ const ProjectOverview = ({ title = "Title for Projects", data }) => {
         description={data?.summary}
       />
 
-      {/* Details */}
       <div
-        className="grid grid-cols-1 xl:grid-cols-[repeat(var(--cols),_minmax(0,_1fr))] gap-10"
-        style={{ "--cols": columnCount }}
+        className="h-12 cursor-pointer w-full flex justify-center"
+        onClick={handleExpand}
       >
-        {Object.entries(data?.details || {}).map(([section, value]) => (
-          <BulletPoints key={section} title={section} points={value.points} />
-        ))}
+        <div className="bg-neutral-800 rounded-full overflow-hidden p-3">
+          {collapsed ? UpArrow : DownArrow}
+        </div>
       </div>
+
+      {/* Details */}
+      {collapsed && (
+        <div className="gap-3">
+          {data?.images && (
+            <div className="my-3  p-3">
+              <ImageSlider images={data?.images} />
+            </div>
+          )}
+          <div
+            className="grid grid-cols-1 xl:grid-cols-[repeat(var(--cols),_minmax(0,_1fr))] gap-10"
+            style={{ "--cols": columnCount }}
+          >
+            {Object.entries(data?.details || {}).map(([section, value]) => (
+              <BulletPoints
+                key={section}
+                title={section}
+                points={value.points}
+              />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

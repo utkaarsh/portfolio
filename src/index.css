@@ -12,3 +12,47 @@
 body {
   font-family: "Geist", system-ui, sans-serif;
 }
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+:root {
+  --slick-dot-color: rgba(235, 215, 215, 0.668);
+  --slick-dot-active-color: #ffffff;
+  --slick-dot-size: 8px;
+  --slick-dot-spacing: 4px;
+}
+
+.slick-slider {
+  margin-bottom: 0 !important;
+}
+
+.slick-dots {
+  position: static !important;
+  display: flex !important;
+  justify-content: center;
+  gap: var(--slick-dot-spacing);
+  margin: 10px 0 0 !important;
+  padding: 0 !important;
+}
+
+.slick-dots li {
+  margin: 0 !important;
+}
+
+.slick-dots li button::before {
+  color: var(--slick-dot-color) !important;
+  font-size: var(--slick-dot-size) !important;
+}
+
+.slick-dots li.slick-active button::before {
+  color: var(--slick-dot-active-color) !important;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-slide > div {
+  height: 100%;
+}

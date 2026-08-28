@@ -5,6 +5,13 @@ import devbumbleIcon from "../../src/assets/devBumble.png";
 import cinemaGptIcon from "../../src/assets/main-logo-white-transparent.svg";
 import cyberiumIcon from "../../src/assets/cyberiums_logo.jpg";
 import binatedIcon from "../../src/assets/binated.png";
+import imgd1 from "../../src/assets/devBumble/img1.jpeg";
+import imgd2 from "../../src/assets/devBumble/img2.jpeg";
+import imgd3 from "../../src/assets/devBumble/img3.jpeg";
+import imgd4 from "../../src/assets/devBumble/img4.jpeg";
+import imgd5 from "../../src/assets/devBumble/img5.jpeg";
+import imgc1 from "../../src/assets/cinema-gpt/image1.png";
+import imgc2 from "../../src/assets/cinema-gpt/image2.png";
 import { ImageIconComponent } from "./helper";
 
 export const projects = [
@@ -56,9 +63,9 @@ export const projects = [
     id: "2",
     icon: <ImageIconComponent src={devbumbleIcon} />,
     title: "Dev Bumble",
-    link: "https://web-dev-bumble.vercel.app",
+    link: "https://expo.dev/accounts/utkaarsh/projects/DevBumble/builds/64e4de0e-4d38-478b-b665-c2b04802366d",
     summary:
-      "A full-stack developer social connection platform enabling users to discover, connect, and chat in real-time with other developers — built with a swipe-based feed, rich profiles, and live messaging.",
+      "Built a cross-platform social networking application with Expo and React Native. Implemented real-time messaging with Socket.IO, swipe-based profile discovery with paginated data loading, persistent authentication, location synchronization, and Expo push notifications with backend device-token registration. Used React Navigation, Redux Toolkit, TanStack React Query, AsyncStorage, and NativeWind",
 
     techStack: [
       "React",
@@ -71,7 +78,7 @@ export const projects = [
       "AWS EC2",
       "JWT",
     ],
-
+    images: [imgd5, imgd2, imgd3, imgd4, imgd1],
     details: {
       // frontend: {
       //   github: "https://github.com",
@@ -134,7 +141,11 @@ export const projects = [
       "Formik",
       "Tailwind CSS",
     ],
-
+    images: [
+      imgc1,
+      "https://github.com/utkaarsh/cinema-gpt/raw/main/searchResults.png",
+      imgc2,
+    ],
     details: {
       frontend: {
         github: "https://github.com",
@@ -166,8 +177,9 @@ export const experienceData = [
     startDate: "July 2025",
     endDate: "Mar 2026",
     designation: "Software Developer",
-    description: `Built the Proofing System from scratch in React and Laravel — architecting a multi-proof annotation platform with side-by-side compare views, polygon/rect annotation tools, per-reviewer approval state tracking, and real-time UI updates without page reloads. This became Binated's hero product in the design-service and promotional industry, directly contributing to a 30% revenue increase and attracting major enterprise clients.
-Developed UI and designed custom components and hooks for Promolink NX a Laravel and React platform used by Binated to manage design-service operations, client portals, production workflows, HRMS tools, reports, invoices, and API integrations.
+    description: `
+    Built the Proofing System from scratch in React and Laravel — architecting a multi-proof annotation platform with side-by-side compare views, polygon/rect annotation tools, per-reviewer approval state tracking, and real-time UI updates without page reloads. This became Binated's hero product in the design-service and promotional industry, directly contributing to a 30% revenue increase and attracting major enterprise clients.
+Developed and maintained multiple  SaaS modules including admin dashboards, client portal, and HRMS recruitment pipeline using React.js, RESTful APIs, and reusable component architecture.
 Integrated OpenAI APIs and implemented webhook infrastructure for real-time order status notifications to client systems.
 
 `,
@@ -204,187 +216,56 @@ Developed an admin analytics dashboard integrating Recharts and D3 for data visu
     link: "https://www.linkedin.com/company/cyberiums/",
     icon: cyberiumIcon,
   },
-  {
-    title: "Smart Genesis",
-    location: "Pune",
-    startDate: "Feb 2022",
-    endDate: "Aug 2022",
-    designation: "Junior Software Developer",
-    description: `Contributed to the frontend development of SinghCoin, a Web3 social media platform, using React and Redux, implementing routing, route protection, and scalable global state management.
+  //   {
+  //     title: "Smart Genesis",
+  //     location: "Pune",
+  //     startDate: "May 2022",
+  //     endDate: "Aug 2022",
+  //     designation: "Software Developer Intern",
+  //     description: `Contributed to the frontend development of SinghCoin, a Web3 social media platform, using React and Redux, implementing routing, route protection, and scalable global state management.
 
-Built core UI features including an NFT marketplace, NFT cards, social feed, and blog system with engagement functionalities such as likes, comments, shares, and reactions.
+  // Built core UI features including an NFT marketplace, NFT cards, social feed, and blog system with engagement functionalities such as likes, comments, shares, and reactions.
 
-Translated Figma designs into responsive, pixel-perfect React components, ensuring consistent UI/UX across different screen sizes and devices.
+  // Translated Figma designs into responsive, pixel-perfect React components, ensuring consistent UI/UX across different screen sizes and devices.
 
-Developed and integrated RESTful APIs using Node JS and Express for blog interactions, feed filtering, and paginated data handling.`,
-    link: "",
-    icon: "https://smartgenesis.io/images/smart-genesis-logo.png",
-  },
+  // Developed and integrated RESTful APIs using Node JS and Express for blog interactions, feed filtering, and paginated data handling.`,
+  //     link: "",
+  //     icon: "https://smartgenesis.io/images/smart-genesis-logo.png",
+  //   },
 ];
 
 export const skills = [
-  {
-    title: "React JS",
-    subtitle: "Frontend library for building UI",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
-  },
-  {
-    title: "React Native",
-    subtitle: "Cross-platform mobile app development",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
-  },
-  {
-    title: "Node JS",
-    subtitle: "JavaScript runtime for backend services",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
-  },
-  {
-    title: "Express JS",
-    subtitle: "Minimal backend framework for Node JS",
-    skillIcon:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-o387HjdP1tur_1CMjSACuTxAlWoXdvmJw&s",
-  },
-  {
-    title: "JavaScript (ES6+)",
-    subtitle: "Modern JavaScript language features",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
-  },
-  {
-    title: "SQL",
-    subtitle: "Relational database querying language",
-    skillIcon:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQc8a_3aix3m_fOzVhaMnuGbfFkgNKt8YBzQ&s",
-  },
-  {
-    title: "HTML5",
-    subtitle: "Semantic markup for web structure",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/html-1.svg",
-  },
-  {
-    title: "CSS3",
-    subtitle: "Styling and layout for web applications",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/css-3.svg",
-  },
-  {
-    title: "Tailwind CSS",
-    subtitle: "Utility-first CSS framework",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg",
-  },
-  {
-    title: "AWS",
-    subtitle: "Cloud services (EC2, S3, SES)",
-    skillIcon:
-      "https://cdn.worldvectorlogo.com/logos/amazon-web-services-2.svg",
-  },
-  {
-    title: "Git",
-    subtitle: "Version control system",
-    skillIcon:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHwO5S7ELqBdjC4yNMGhFGCXXKu7fZwRcg6A&s",
-  },
-  {
-    title: "GitHub",
-    subtitle: "Code hosting & collaboration platform",
-    skillIcon:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtGg2RJvvrzmUi4BXEWzpEwLc2XkJndppcgQ&s",
-  },
-  {
-    title: "Typescript",
-    subtitle: "A subset of Javascript",
-    skillIcon: "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
-  },
-  {
-    title: "Laravel",
-    subtitle: "A PHP Framework",
-    skillIcon: "https://cdn.flyonui.com/fy-assets/icons/laravel-icon.png",
-  },
+  "React JS",
+  "React Native",
+  "Node JS",
+  "Express JS",
+  "JavaScript (ES6+)",
+  "SQL",
+  "HTML5",
+  "CSS3",
+  "Tailwind CSS",
+  "AWS (EC2,S3, SES)",
+  "Git",
+  "GitHub",
+  "TypeScript",
+  "Laravel",
 ];
-
 export const skillTools = [
-  {
-    title: "Redux",
-    subtitle: "State management for complex React apps",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/redux.svg",
-  },
-  {
-    title: "React Query",
-    subtitle: "Data fetching and caching for React",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
-  },
-  {
-    title: "Context API",
-    subtitle: "Built-in state sharing for React",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
-  },
-  {
-    title: "Webpack",
-    subtitle: "Module bundler for modern web apps",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/webpack-icon.svg",
-  },
-  {
-    title: "Vite",
-    subtitle: "Fast frontend build tool and dev server",
-    skillIcon: "https://vitejs.dev/logo.svg",
-  },
-  {
-    title: "Babel",
-    subtitle: "JavaScript compiler for compatibility",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/babel-10.svg",
-  },
-  {
-    title: "JWT Authentication",
-    subtitle: "Secure token-based authentication",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/jwt-3.svg",
-  },
-  {
-    title: "Postman",
-    subtitle: "API testing and debugging tool",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/postman.svg",
-  },
-  {
-    title: "MongoDB",
-    subtitle: "NoSQL document database",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
-  },
-  {
-    title: "Axios",
-    subtitle: "Promise-based HTTP client",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/axios.svg",
-  },
-  {
-    title: "Web Sockets",
-    subtitle: "Real-time bidirectional communication",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/socket-io.svg",
-  },
-  {
-    title: "MySQL",
-    subtitle: "Relational database management system",
-    skillIcon: "https://www.fullstackpython.com/img/logos/mysql.png",
-  },
-  {
-    title: "Jira",
-    subtitle: "Agile project and issue tracking",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/jira-1.svg",
-  },
-  {
-    title: "Chrome DevTools",
-    subtitle: "Browser debugging and performance analysis",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/google-chrome.svg",
-  },
-  {
-    title: "Webhooks",
-    subtitle: "Event-driven backend integrations",
-    skillIcon:
-      "https://files.cdn.prismic.io/files/f4b68c81-d6f9-4f2b-855e-aac0c168eff2_webhooks-logo-png-transparent.svg?fit=max&w=3840",
-  },
-  {
-    title: "NPM",
-    subtitle: "JavaScript package management",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/npm-square-red-1.svg",
-  },
-  {
-    title: "Jest",
-    subtitle: "Automated testing for JavaScript apps",
-    skillIcon: "https://cdn.worldvectorlogo.com/logos/jest-2.svg",
-  },
+  "Redux",
+  "React Query",
+  "Context API",
+  "Webpack",
+  "Vite",
+  "Babel",
+  "JWT Authentication",
+  "Postman",
+  "MongoDB",
+  "Axios",
+  "WebSockets",
+  "MySQL",
+  "Jira",
+  "Chrome DevTools",
+  "Webhooks",
+  "NPM",
+  "Jest",
 ];
