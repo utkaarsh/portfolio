@@ -98,7 +98,7 @@ export const projects = [
           "Managed server state with TanStack React Query including pagination, caching, and infinite scrolling",
           "Developed mobile-first UX features such as debounced search, pull-to-refresh, and smooth swipe gestures using Animated and PanResponder",
           "Utilized Expo Location API to handle permissions, fetch user coordinates, and enable location-based discovery",
-          "Designed and integrated a real-time notification pipeline using FCM, Expo Notifications, Socket.IO, and Node.js, handling device registration, token persistence, push delivery, notification state, and real-time in-app updates.",
+          "Designed and integrated a real-time notification pipeline using FCM, Expo Notifications, Socket IO, and Node Js, handling device registration, token persistence, push delivery, notification state, and real-time in-app updates.",
         ],
       },
 
@@ -108,7 +108,7 @@ export const projects = [
           "Set up the backend architecture from scratch using Node JS, Express and MongoDB",
           "Designed RESTful APIs and routing system with scalable service architecture",
           "Implemented secure authentication using JWT and password encryption",
-          "Built a real-time chat system using WebSockets and Socket.io with dynamic room management",
+          "Built a real-time chat system using WebSockets and Socket io with dynamic room management",
           "Optimized feed performance using pagination and MongoDB compound indexes",
         ],
       },
@@ -179,7 +179,7 @@ export const experienceData = [
     designation: "Software Developer",
     description: `
     Built the Proofing System from scratch in React and Laravel — architecting a multi-proof annotation platform with side-by-side compare views, polygon/rect annotation tools, per-reviewer approval state tracking, and real-time UI updates without page reloads. This became Binated's hero product in the design-service and promotional industry, directly contributing to a 30% revenue increase and attracting major enterprise clients.
-Developed and maintained multiple  SaaS modules including admin dashboards, client portal, and HRMS recruitment pipeline using React.js, RESTful APIs, and reusable component architecture.
+Developed and maintained multiple  SaaS modules including admin dashboards, client portal, and HRMS recruitment pipeline using React Js, RESTful APIs, and reusable component architecture.
 Integrated OpenAI APIs and implemented webhook infrastructure for real-time order status notifications to client systems.
 
 `,
