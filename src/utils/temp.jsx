@@ -216,22 +216,22 @@ Developed an admin analytics dashboard integrating Recharts and D3 for data visu
     link: "https://www.linkedin.com/company/cyberiums/",
     icon: cyberiumIcon,
   },
-  //   {
-  //     title: "Smart Genesis",
-  //     location: "Pune",
-  //     startDate: "May 2022",
-  //     endDate: "Aug 2022",
-  //     designation: "Software Developer Intern",
-  //     description: `Contributed to the frontend development of SinghCoin, a Web3 social media platform, using React and Redux, implementing routing, route protection, and scalable global state management.
+  {
+    title: "Smart Genesis",
+    location: "Pune",
+    startDate: "May 2022",
+    endDate: "Aug 2022",
+    designation: "Software Developer Intern",
+    description: `Contributed to the frontend development of SinghCoin, a Web3 social media platform, using React and Redux, implementing routing, route protection, and scalable global state management.
 
-  // Built core UI features including an NFT marketplace, NFT cards, social feed, and blog system with engagement functionalities such as likes, comments, shares, and reactions.
+  Built core UI features including an NFT marketplace, NFT cards, social feed, and blog system with engagement functionalities such as likes, comments, shares, and reactions.
 
-  // Translated Figma designs into responsive, pixel-perfect React components, ensuring consistent UI/UX across different screen sizes and devices.
+  Translated Figma designs into responsive, pixel-perfect React components, ensuring consistent UI/UX across different screen sizes and devices.
 
-  // Developed and integrated RESTful APIs using Node JS and Express for blog interactions, feed filtering, and paginated data handling.`,
-  //     link: "",
-  //     icon: "https://smartgenesis.io/images/smart-genesis-logo.png",
-  //   },
+  Developed and integrated RESTful APIs using Node JS and Express for blog interactions, feed filtering, and paginated data handling.`,
+    link: "",
+    icon: "https://smartgenesis.io/images/smart-genesis-logo.png",
+  },
 ];
 
 export const skills = [
